@@ -1,0 +1,42 @@
+:root {
+    --title-color: #322153; /*um atalho para replicar
+    title color se torna uma variavel - olhe em line 19 e 50 */ 
+    --primary-color: #34cb79;
+}
+
+* { /*Esse * é capaz de referenciar todos os elementos */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #f0f0f5;
+}
+
+a { 
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--title-color); 
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* BOX MODEL 
+
+    Existem dois tipos de caixa - inline e block 
+    inline ocupa só o proprio espaço, e se for colocado uma
+    ao lado da outra,  ficam lado a lado também 
+    tags inline 
+    <a href="https://google.com.br">Cadastre um ponto de coleta</a> 
+    <a href="https://google.com.br/imagens">Amanda Lopes</a>
+
+    já o block ocupa um espaço maior, como h3, h1, div. 
+
+    display flex permite colocar elementos side by side
+ */

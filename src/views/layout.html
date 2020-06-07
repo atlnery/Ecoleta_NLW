@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!--Tipo de lingugem da página-->
+<head>
+    <meta charset="UTF-8"> <!--fala que aceita caracteres especiais-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--para caber em diversas telas-->
+
+    {% block title %}
+        <title>Ecoleta</title>
+    {% endblock title %}
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/styles/main.css">
+    {% block styles %} {# vai substituir isso pelo texto que conter dentro do arquivo que extends #}
+    {% endblock styles %}
+    <link rel="stylesheet" href="/styles/responsive.css"><!--deixar sempre por ultimos-->
+
+ </head>
+<body>
+
+    <div id= "{{ pageId }}">
+        {% block content %}
+        {% endblock content %}      
+    </div>
+
+    {% block modal %}
+    {% endblock modal %}
+
+    {% block scripts %}
+    {% endblock scripts %}
+    
+</body>
+</html>
